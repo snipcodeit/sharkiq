@@ -252,9 +252,17 @@ class SharkIqVacuum:
         """Set the operating mode.  This is just a convenience wrapper around `set_property_value`"""
         self.set_property_value(Properties.OPERATING_MODE, mode)
 
+    def set_power_mode(self, mode: PowerModes):
+        """Set the power mode.  This is just a convenience wrapper around `set_property_value`"""
+        self.set_property_value(Properties.POWER_MODE, mode)
+
     async def async_set_operating_mode(self, mode: OperatingModes):
         """Set the operating mode.  This is just a convenience wrapper around `set_property_value`"""
         await self.async_set_property_value(Properties.OPERATING_MODE, mode)
+
+    async def async_set_power_mode(self, mode: PowerModes):
+        """Set the power mode.  This is just a convenience wrapper around `set_property_value`"""
+        await self.async_set_property_value(Properties.POWER_MODE, mode)
 
     def find_device(self):
         """Make the device emit an annoying chirp so you can find it"""
