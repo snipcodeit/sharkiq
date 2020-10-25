@@ -133,5 +133,6 @@ dmypy.json
 .vscode/
 
 # Secrets
+secrets.ini
 secrets.py
 driver.py
